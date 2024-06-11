@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Calculadora Basica</title>
+
+
+   
+
+</head>
+<body>
+
+    <div class="container py-2">
+        <div class="row">
+            <div class="col" style="background-color:brown;">
+                <h1  class="text-center">CALCULADORA BASICA</h1>
+                
+                <img   src="./images/calculadora.jfif" width="50" height="50"   alt="calculadora">
+                
+            </div>    
+        </div>
+    </div>
+   
+  <form  id="formulario" name="" >
+    <div class="container text-center">
+        <h1 class="text-center">OPERACIONES:</h1>
+
+         <div class="row "></div>
+                 <label class="col-3 col-form-label">Número 1: </label>
+             <div class="col">
+                 <input  class="text-center" type="number" name=""     id="valor1" autofocus placeholder="Escribe un número">
+             </div>
+
+
+                <div class="row "></div>
+                    <label class="col-3 col-form-label">Número 2: </label>
+                <div class="col">
+                    <input  class="text-center" type="number" name=""     id="valor2" autofocus placeholder="Escribe Otro Número">
+                </div>
+   
+    </div>
+    <br>
+  
+
+    <div class="container text-center">
+        <div class="btn-group-vertical " role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-primary"  onclick="sumar();">
+                <img src="/images/botonsuma.jfif" alt="Imagen" style="width: 50px; height: 50px;"> 
+            </button>
+
+            
+            <button type="button" class="btn btn-success"  onclick="restar();">
+                <img src="/images/restar.jfif"  alt="Imagen" style="width: 60px; height: 60px;">
+
+            </button>
+
+            
+            <button type="button" class="btn btn-danger"  onclick="multiplicar();">
+                 <img src="/images/multiplicar.jfif"  alt="Imagen" style="width: 50px; height: 50px;">
+            </button>
+
+
+            <button type="button" class="btn btn-warning"  onclick="dividir();">
+                <img src="/images/dividir.png" alt="Imagen" style="width: 50px; height: 50px;">
+            </button>  
+
+            <button type="button" class="btn btn-dark"  onclick="limpiar();">LIMPIAR </button>  
+        </div>
+    </div>
+     <br>
+     
+    <div class="container text-center py-5">
+         <p class="display-3"><span  id="resultado"></span></p> 
+    </div>
+      
+    
+  </form>
+ 
+
+
+<script type="text/javascript" src="./ProgramaCalculadora.js">
+</script>
+</body>
+</html>
