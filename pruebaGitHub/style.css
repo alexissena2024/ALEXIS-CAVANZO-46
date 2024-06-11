@@ -1,0 +1,13 @@
+
+/* Estilos para centrar la imagen */
+.col {
+  text-align: center;
+  background-color: blueviolet;
+}
+
+.basica{
+    padding: 0;
+    margin: 0;
+   
+    text-align: center;
+}
